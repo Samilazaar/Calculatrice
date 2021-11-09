@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculatrice LAZAAR</title>
+    <link rel="stylesheet" href="calc.css" type="text/css">
+</head>
+
+<body>
+    <div class="display">
+        <p id="output">0</p>
+    </div>
+
+    <!-- FIRST ROW -->
+    <div>
+        <button style="width: 138px;" onclick="clearOutput()">C</button>
+        <button onclick="perc('%')">%</button>
+        <button onclick="fordisplay('/')">/</button>
+        <button style="width: 65px;" onclick="fordisplay('(')">(</button>
+        <button style="width: 67px;" onclick="fordisplay(')')">)</button>
+    </div>
+
+    <!-- SECOND ROW -->
+    <div>
+        <button onclick="fordisplay('7')">7</button>
+        <button onclick="fordisplay('8')">8</button>
+        <button onclick="fordisplay('9')">9</button>
+        <button style="width: 207px;" onclick="fordisplay('*')">X</button>
+    </div>
+
+<!-- THIRD ROW -->
+    <div>
+        <button onclick="fordisplay('4')">4</button>
+        <button onclick="fordisplay('5')">5</button>
+        <button onclick="fordisplay('6')">6</button>
+        <button style="width: 207px;" onclick="fordisplay('-')">-</button>
+    </div>
+
+<!-- FOURTH ROW -->
+    <div>
+        <button onclick="fordisplay('1')">1</button>
+        <button onclick="fordisplay('2')">2</button>
+        <button onclick="fordisplay('3')">3</button>
+        <button style="width: 207px;" onclick="fordisplay('+')">+</button>
+    </div>
+
+<!-- FIFTH ROW -->
+    <div>
+        <button style="width: 138px;" onclick="fordisplay('0')">0</button>
+        <button onclick="fordisplay('.')">.</button>
+        <button style="width: 207px; " onclick="solve()">=</button>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+
+</html>
